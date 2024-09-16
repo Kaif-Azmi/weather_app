@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <form action="/search">
+        <input
+          type="search"
+          id = "city-name"
+          class="search-bar"
+          name="query"
+          onload="searchTemperature()"
+          placeholder="Search for cities"
+        />
+      </form>
+      </nav>
+    </header>
+    <main class="content-container">
+      <article class="main-box1">
+        <div id="current-report-container">
+        <h2 id="current-city">Noida</h1>
+        <span id="current-rain-chance">Chance of rain: 20&percnt;</span>
+        <span id="current-temperature">31&deg;C</span>
+      </div>
+      <span class="material-symbols-outlined main-box1-icon">
+        sunny
+      </span>
+      </article>
+      <article class="main-box2">
+        <h1>TODAY'S FORECAST</h1>
+        <div class="time-wise-container">
+          <div class="time-wise-element">
+            <span>6:00 AM</span>
+            <span class="material-symbols-outlined">
+              sunny
+            </span>
+            <h3><span id="temp-6-am">24.6</span>&deg;C</h3>
+          </div>
+          <div class="time-wise-element">
+            <span>9:00 AM</span>
+            <span class="material-symbols-outlined">
+              partly_cloudy_day
+              </span>
+            <h3><span id="temp-9-am">28.6</span>&deg;C</h3>
+          </div>
+          <div class="time-wise-element">
+            <span>12:00 PM</span>
+            <span class="material-symbols-outlined">
+              cloud
+              </span>
+            <h3><span id="temp-12-pm">30.6</span>&deg;C</h3>
+          </div>
+          <div class="time-wise-element">
+            <span>3:00 PM</span>
+            <span class="material-symbols-outlined">cloud</span>
+            <h3><span id="temp-3-pm">30.6</span>&deg;C</h3>
+          </div>
+          <div class="time-wise-element">
+            <span>6:00 PM</span>
+            <span class="material-symbols-outlined">
+              partly_cloudy_day
+              </span>
+            <h3><span id="temp-6-pm">27.6</span>&deg;C</h3>
+          </div>
+          <div class="time-wise-element">
+            <span>9:00 PM</span>
+            <span class="material-symbols-outlined">
+              cloud
+              </span>
+            <h3><span id="temp-9-pm">24.6</span>&deg;C</h3>
+          </div>
+        </div>
+      </article>
+      <article class="main-box3">
+        <h1>AIR CONDITIONS</h1>
+        <section class="main-box3-inner-container">
+          <section class="main-box3-elements">
+            <span class="material-symbols-outlined span-icon">
+              thermometer
+              </span>
+            <span class="span-text">Real Feel</span>
+            <h3>30&deg;C</h3>
+          </section>
+          <section class="main-box3-elements">
+            <span class="material-symbols-outlined span-icon">air</span>
+            <span class="span-text">Wind</span>
+            <h3>0.2 Km/h</h3>
+          </section>
+          <section class="main-box3-elements">
+            <span class="material-symbols-outlined span-icon">
+              water_drop
+              </span></span>
+            <span class="span-text">Chance of rain</span>
+            <h3>0&percnt;</h3>
+          </section>
+          <section class="main-box3-elements">
+            <span class="material-symbols-outlined span-icon">
+              brightness_5
+              </span></span>
+            <span class="span-text">UV Index</span>
+            <h3>3</h3>
+          </section>
+        </section>
+      </article>
+    </main>
+    <aside class="aside-left">
+      <a href="index.html"
+        ><i class="material-symbols-outlined"> cloud </i>
+        <span>weather</span>
+      </a>
+      <a href="#cities">
+        <i class="material-symbols-outlined"> lists </i>
+        <span>Cities</span>
+      </a>
+      <a href="#location">
+        <i class="material-symbols-outlined"> location_on </i>
+        <span>Map</span>
+      </a>
+      <a href="#task">
+        <i class="material-symbols-outlined"> assignment_add </i>
+        <span>Tasks</span>
+      </a>
+    </aside>
+    <aside class="aside-right">
+      <h1>7-DAY FORECAST</h1>
+      <section class="forecast-container">
+      <div id="forecast-days">
+        <div class="forecast-element">
+          <span class="forecast-day">Monday</span>
+          <span class="forecast-icon material-symbols-outlined">wb_sunny</span>
+          <span class="forecast-temp">25°C</span>
+          <span class="forecast-wind">12 km/h</span>
+        </div>
+        <div class="forecast-element">
+          <span class="forecast-day">Tuesday</span>
+          <span class="forecast-icon material-symbols-outlined">cloudy</span>
+          <span class="forecast-temp">22°C</span>
+          <span class="forecast-wind">15 km/h</span>
+        </div>
+        <div class="forecast-element">
+          <span class="forecast-day">Wednesday</span>
+          <span class="forecast-icon material-symbols-outlined">wb_sunny</span>
+          <span class="forecast-temp">25°C</span>
+          <span class="forecast-wind">12 km/h</span>
+        </div>
+        <div class="forecast-element">
+          <span class="forecast-day">Thursday</span>
+          <span class="forecast-icon material-symbols-outlined">wb_sunny</span>
+          <span class="forecast-temp">25°C</span>
+          <span class="forecast-wind">12 km/h</span>
+        </div>
+        <div class="forecast-element">
+          <span class="forecast-day">Friday</span>
+          <span class="forecast-icon material-symbols-outlined">wb_sunny</span>
+          <span class="forecast-temp">25°C</span>
+          <span class="forecast-wind">12 km/h</span>
+        </div>
+        <div class="forecast-element">
+          <span class="forecast-day">Saturday</span>
+          <span class="forecast-icon material-symbols-outlined">wb_sunny</span>
+          <span class="forecast-temp">25°C</span>
+          <span class="forecast-wind">12 km/h</span>
+        </div>
+        <div class="forecast-element">
+          <span class="forecast-day">Sunday</span>
+          <span class="forecast-icon material-symbols-outlined">wb_sunny</span>
+          <span class="forecast-temp">25°C</span>
+          <span class="forecast-wind">12 km/h</span>
+        </div>
+      </div>
+    </section>
+    </aside>    
+    <script src="index.js"></script>
+  </body>
+</html>
